@@ -1,4 +1,4 @@
-function toStr(el){
+function toStr(el=new Array()){
     var ret='';
     el.forEach(function(e) {
         ret+=e;
@@ -11,7 +11,7 @@ var t=document.getElementById('target');
 var a = new Array('*');
 //var b = new Array();
 t.innerHTML+=a[0]+'<br>';
-while(a.length<21){
+while(a.length<33){
     //b = b.concat(' ');
     a = a.concat('*' , '*');
     t.innerHTML+=(toStr(a)/*+toStr(b)*/+'<br>');
@@ -29,4 +29,4 @@ var c = 1;
 do{
     printEl(c);
     c++
-}while(c<11);
+}while(c<11);*/
