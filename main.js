@@ -17,6 +17,7 @@ while(a.length<33){
     t.innerHTML+=(toStr(a)/*+toStr(b)*/+'<br>');
 };
 // Попытка 2 не удалась, ошибка в коде
+// не смог понять где, а вроде всё правильно
 /*var t2=document.getElementById('target2');
 function printEl(c, h=21){
     var tree=new Array();
@@ -30,3 +31,9 @@ do{
     printEl(c);
     c++
 }while(c<11);*/
+for (let i = 1; i <=32; i+=2){ //  делаем цикл основание в 30 ел
+    for (let n = 1; n < i; n+=2) 
+    //  делаем вложенный цикл который с каждой итерацией уменьшает i на 1
+    document.write('*' + n); 
+    document.write('</br>');
+}
